@@ -1,0 +1,50 @@
+body {
+    color: rgb(43, 41, 41);
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 1rem;
+}
+
+#root {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#root > div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+img {
+    width: 100px;
+    cursor: pointer;
+}
+
+.container {
+    margin: 40px;
+    flex-grow: 1;
+}
+
+.image-counter {
+    display: inline-block;
+    position: relative;
+}
+
+.image-counter .count {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    font-size: 2rem;
+    transform: translateY(-50%);
+    transition: all .2s;
+}
+
+.image-counter:hover .count {
+    opacity: 1;
+    left: 110%;
+}
